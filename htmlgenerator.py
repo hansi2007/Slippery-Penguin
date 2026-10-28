@@ -384,7 +384,7 @@ def generate_report(b_exp, default_binary=None):
                             section.appendChild(pre);
                         } else {
                             const msg = document.createElement('p');
-                            msg.textContent = 'No results';
+                            msg.textContent = type === 'gtfo' ? 'No matches found' : 'No results';
                             section.appendChild(msg);
                         }
 
